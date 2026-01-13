@@ -45,4 +45,22 @@ describe("no bueno", () => {
       warning => warning.rule === "scss/property-no-unknown"
     )).toBeDefined();
   });
+
+  it("found unknown property value (extra rule of config)", () => {
+    expect(results.at(0)?.warnings.find(
+      warning => warning.rule === "scss/declaration-property-value-no-unknown"
+    )).toBeDefined();
+  });
+
+  it("found css features that aren't baseline yet (stylelint-plugin-use-baseline)", () => {
+    expect(results.at(0)?.warnings.find(
+      warning => warning.rule === "plugin/use-baseline"
+    )).toBeDefined();
+  });
+
+  it("found badly performing transition properties (stylelint-high-performance-animation)", () => {
+    expect(results.at(0)?.warnings.find(
+      warning => warning.rule === "plugin/no-low-performance-animation-properties"
+    )).toBeDefined();
+  });
 });
