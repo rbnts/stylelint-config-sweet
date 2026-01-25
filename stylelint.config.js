@@ -6,8 +6,7 @@ export default {
   reportUnscopedDisables: true,
   plugins: [
     "stylelint-plugin-use-baseline",
-    "stylelint-high-performance-animation",
-    "stylelint-declaration-block-no-ignored-properties"
+    "stylelint-high-performance-animation"
   ],
   extends: [
     "stylelint-config-standard-scss",
@@ -64,7 +63,6 @@ export default {
     "scss/selector-no-redundant-nesting-selector": true,
     "scss/selector-no-union-class-name": true,
     "plugin/use-baseline": [true, { available: "newly" }],
-    "plugin/no-low-performance-animation-properties": true,
-    "plugin/declaration-block-no-ignored-properties": true
+    "plugin/no-low-performance-animation-properties": true
   }
 };

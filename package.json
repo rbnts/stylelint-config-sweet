@@ -1,6 +1,6 @@
 {
 	"name": "stylelint-config-sweet",
-	"version": "9.0.0",
+	"version": "9.0.1",
 	"description": "Stylelint extendable config for the most sweet-ass CSS and Sass. 🤙🏼",
 	"keywords": [
 		"stylelint",
@@ -18,7 +18,6 @@
 		"stylelint.config.js"
 	],
 	"scripts": {
-		"check": "stylelint-find-new-rules",
 		"start": "vitest"
 	},
 	"dependencies": {
@@ -27,7 +26,6 @@
 		"stylelint-config-html": "^1.1.0",
 		"stylelint-config-recess-order": "^7.6.0",
 		"stylelint-config-standard-scss": "^17.0.0",
-		"stylelint-declaration-block-no-ignored-properties": "^2.8.0",
 		"stylelint-high-performance-animation": "^2.0.0",
 		"stylelint-order": "^7.0.1",
 		"stylelint-plugin-use-baseline": "^1.2.0"
@@ -38,7 +36,6 @@
 		"eslint-config-sweet": "^31.0.0",
 		"robins-tsconfig": "^2.0.0",
 		"stylelint": "^17.0.0",
-		"stylelint-find-new-rules": "^5.0.1",
 		"typescript": "^5.9.3",
 		"vitest": "^4.0.18"
 	},
