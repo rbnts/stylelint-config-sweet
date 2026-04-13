@@ -7,7 +7,7 @@
 
   grid-gap: 9px;
   z-index: bottom;
-	transition: top 8s linear;
+	transition: top 8s     linear;
 
   @if ($var != null) {
     colour: yellow;

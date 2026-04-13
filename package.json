@@ -1,48 +1,46 @@
 {
-	"name": "stylelint-config-sweet",
-	"version": "10.0.0",
-	"description": "Stylelint extendable config for the most sweet-ass CSS and Sass. 🤙🏼",
-	"keywords": [
-		"stylelint",
-		"stylelint-config"
-	],
-	"homepage": "https://github.com/robinloeffel/stylelint-config-sweet",
-	"bugs": "https://github.com/robinloeffel/stylelint-config-sweet/issues",
-	"repository": "https://github.com/robinloeffel/stylelint-config-sweet.git",
-	"license": "MIT",
-	"author": "Robin Löffel",
-	"type": "module",
-	"main": "stylelint.config.js",
-	"types": "stylelint.config.d.ts",
-	"files": [
-		"stylelint.config.js"
-	],
-	"scripts": {
-		"check": "stylelint-find-new-rules",
-		"start": "vitest"
-	},
-	"dependencies": {
-		"@stylistic/stylelint-config": "^4.0.0",
-		"postcss-html": "^1.8.1",
-		"stylelint-config-html": "^1.1.0",
-		"stylelint-config-recess-order": "^7.6.0",
-		"stylelint-config-standard-scss": "^17.0.0",
-		"stylelint-declaration-block-no-ignored-properties": "^3.0.0",
-		"stylelint-high-performance-animation": "^2.0.0",
-		"stylelint-order": "^7.0.1",
-		"stylelint-plugin-use-baseline": "^1.2.0"
-	},
-	"devDependencies": {
-		"@vitest/eslint-plugin": "^1.6.6",
-		"eslint": "^9.39.2",
-		"eslint-config-sweet": "^31.0.0",
-		"robins-tsconfig": "^2.0.0",
-		"stylelint": "^17.0.0",
-		"stylelint-find-new-rules": "^6.0.0",
-		"typescript": "^5.9.3",
-		"vitest": "^4.0.18"
-	},
-	"peerDependencies": {
-		"stylelint": "^17.0.0"
-	}
+  "name": "stylelint-config-sweet",
+  "version": "11.0.0",
+  "description": "Stylelint extendable config for the most sweet-ass CSS and Sass. 🤙🏼",
+  "keywords": [
+    "stylelint-config"
+  ],
+  "repository": "https://github.com/robinloeffel/stylelint-config-sweet",
+  "license": "MIT",
+  "author": "Robin Löffel",
+  "type": "module",
+  "main": "stylelint.config.js",
+  "types": "stylelint.config.d.ts",
+  "files": [
+    "stylelint.config.js",
+    "stylelint.config.d.ts"
+  ],
+  "scripts": {
+    "check": "stylelint-find-new-rules",
+    "start": "vitest"
+  },
+  "dependencies": {
+    "@stylistic/stylelint-config": "^5.0.0",
+    "postcss-html": "^1.8.1",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-recess-order": "^7.7.0",
+    "stylelint-config-standard-scss": "^17.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^3.0.0",
+    "stylelint-high-performance-animation": "^2.0.0",
+    "stylelint-order": "^8.1.1",
+    "stylelint-plugin-use-baseline": "^1.4.1"
+  },
+  "devDependencies": {
+    "@vitest/eslint-plugin": "1.6.15",
+    "eslint": "10.2.0",
+    "eslint-config-sweet": "32.0.0",
+    "robins-tsconfig": "5.0.0",
+    "stylelint": "17.7.0",
+    "stylelint-find-new-rules": "6.0.0",
+    "typescript": "6.0.2",
+    "vitest": "4.1.4"
+  },
+  "peerDependencies": {
+    "stylelint": ">=17"
+  }
 }

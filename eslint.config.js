@@ -5,12 +5,11 @@ import { defineConfig } from "eslint/config";
 export default defineConfig(
   sweet,
   {
-    rules: {
-      "max-lines-per-function": "off"
-    }
-  },
-  {
     files: ["**/*.test.ts"],
-    ...vitest.configs.recommended
+    ...vitest.configs.recommended,
+    rules: {
+      "max-lines-per-function": "off",
+      "max-statements": "off"
+    }
   }
 );

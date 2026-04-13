@@ -1,5 +1,6 @@
 /** @type {import("stylelint").Config} */
 export default {
+  allowEmptyInput: true,
   reportNeedlessDisables: true,
   reportInvalidScopeDisables: true,
   reportDescriptionlessDisables: true,
