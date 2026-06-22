@@ -19,6 +19,15 @@ export default {
   rules: {
     "color-named": "never",
     "property-no-unknown": null,
+    "declaration-no-important": true,
+    "no-unknown-animations": true,
+    "max-nesting-depth": [
+      3,
+      {
+        ignore: ["blockless-at-rules", "pseudo-classes"],
+        ignoreAtRules: ["if", "else", "each", "for", "while"]
+      }
+    ],
     "declaration-property-value-disallowed-list": [
       {
         transition: "/all/"
@@ -41,7 +50,6 @@ export default {
       }
     ],
     "scss/at-mixin-no-risky-nesting-selector": true,
-    "scss/at-mixin-argumentless-call-parentheses": "never",
     "scss/at-root-no-redundant": true,
     "scss/at-use-no-unnamespaced": true,
     "scss/at-use-no-redundant-alias": true,
@@ -58,14 +66,16 @@ export default {
     "scss/double-slash-comment-inline": "never",
     "scss/function-calculation-no-interpolation": true,
     "scss/function-color-relative": true,
+    "scss/function-no-unknown": true,
     "scss/map-keys-quotes": "always",
     "scss/no-duplicate-dollar-variables": true,
     "scss/no-duplicate-load-rules": true,
+    "scss/no-unused-private-members": true,
     "scss/property-no-unknown": true,
     "scss/selector-no-redundant-nesting-selector": true,
     "scss/selector-no-union-class-name": true,
     "plugin/use-baseline": [true, { available: "newly" }],
-    "plugin/no-low-performance-animation-properties": true,
+    "plugin/no-low-performance-animation-properties": [true, { ignore: "paint-properties" }],
     "plugin/declaration-block-no-ignored-properties": true
   }
 };

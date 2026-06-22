@@ -1,8 +1,9 @@
 # stylelint-config-sweet
 
-[![latest version](https://badgen.net/npm/v/stylelint-config-sweet)](https://npmx.dev/package/stylelint-config-sweet)
-[![npm downloads a week](https://badgen.net/npm/dw/stylelint-config-sweet)](https://npmx.dev/package/stylelint-config-sweet)
-[![license](https://badgen.net/npm/license/stylelint-config-sweet)](https://choosealicense.com/licenses/mit/)
+[![latest version](https://npmx.dev/api/registry/badge/version/stylelint-config-sweet)](https://npmx.dev/stylelint-config-sweet)
+[![npm downloads](https://npmx.dev/api/registry/badge/downloads/stylelint-config-sweet)](https://npmx.dev/stylelint-config-sweet)
+[![typescript types](https://npmx.dev/api/registry/badge/types/stylelint-config-sweet)](https://npmx.dev/stylelint-config-sweet)
+[![license](https://npmx.dev/api/registry/badge/license/stylelint-config-sweet)](https://npmx.dev/stylelint-config-sweet)
 
 > Stylelint [extendable config](https://stylelint.io/user-guide/configure/#extends) for the most sweet-ass CSS and Sass. 🤙🏼
 
@@ -43,4 +44,4 @@ Don't forget to add `.stylelintcache` to your `.gitignore`!
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://opensource.org/license/MIT)

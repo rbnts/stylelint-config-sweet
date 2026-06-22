@@ -1,19 +1,22 @@
 {
   "name": "stylelint-config-sweet",
-  "version": "11.0.0",
+  "version": "12.0.0",
   "description": "Stylelint extendable config for the most sweet-ass CSS and Sass. 🤙🏼",
   "keywords": [
     "stylelint-config"
   ],
-  "repository": "https://github.com/robinloeffel/stylelint-config-sweet",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbnts/stylelint-config-sweet.git"
+  },
   "license": "MIT",
   "author": "Robin Löffel",
   "type": "module",
-  "main": "stylelint.config.js",
-  "types": "stylelint.config.d.ts",
+  "exports": "./stylelint.config.js",
+  "types": "./stylelint.config.d.ts",
   "files": [
-    "stylelint.config.js",
-    "stylelint.config.d.ts"
+    "./stylelint.config.js",
+    "./stylelint.config.d.ts"
   ],
   "scripts": {
     "check": "stylelint-find-new-rules",
@@ -28,17 +31,17 @@
     "stylelint-declaration-block-no-ignored-properties": "^3.0.0",
     "stylelint-high-performance-animation": "^2.0.0",
     "stylelint-order": "^8.1.1",
-    "stylelint-plugin-use-baseline": "^1.4.1"
+    "stylelint-plugin-use-baseline": "^1.4.3"
   },
   "devDependencies": {
-    "@vitest/eslint-plugin": "1.6.15",
-    "eslint": "10.2.0",
-    "eslint-config-sweet": "32.0.0",
+    "@vitest/eslint-plugin": "1.6.20",
+    "eslint": "10.5.0",
+    "eslint-config-sweet": "33.0.0",
     "robins-tsconfig": "5.0.0",
-    "stylelint": "17.7.0",
+    "stylelint": "17.13.0",
     "stylelint-find-new-rules": "6.0.0",
-    "typescript": "6.0.2",
-    "vitest": "4.1.4"
+    "typescript": "6.0.3",
+    "vitest": "4.1.9"
   },
   "peerDependencies": {
     "stylelint": ">=17"
