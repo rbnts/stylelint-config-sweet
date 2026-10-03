@@ -1,7 +1,13 @@
+@use "sass:math";
+
+@function half($value) {
+  @return math.div($value, 2);
+}
+
 .kebab-case {
   $red: #f00;
 
   position: absolute;
-  inset: 0;
+  inset: math.div(4px, 2);
   background-color: $red;
 }

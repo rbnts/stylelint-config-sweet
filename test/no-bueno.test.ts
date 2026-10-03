@@ -5,6 +5,10 @@ const { errored, results } = await stylelint.lint({
   files: "./test/no-bueno.scss"
 });
 
+const { results: cssResults } = await stylelint.lint({
+  files: "./test/no-bueno.css"
+});
+
 describe("no bueno", () => {
   it("found errors", () => {
     expect(errored).toBe(true);
@@ -64,9 +68,63 @@ describe("no bueno", () => {
     )).toBeDefined();
   });
 
+  it("found multi-keyword display value (extra rule of config)", () => {
+    expect(results.at(0)?.warnings.find(
+      warning => warning.rule === "display-notation"
+    )).toBeDefined();
+  });
+
+  it("found named font weight (extra rule of config)", () => {
+    expect(results.at(0)?.warnings.find(
+      warning => warning.rule === "font-weight-notation"
+    )).toBeDefined();
+  });
+
+  it("found deprecated color channel function (extra rule of config)", () => {
+    expect(results.at(0)?.warnings.find(
+      warning => warning.rule === "scss/function-color-channel"
+    )).toBeDefined();
+  });
+
+  it("found flex container without wrapping (stylelint-plugin-defensive-css)", () => {
+    expect(results.at(0)?.warnings.find(
+      warning => warning.rule === "defensive-css/require-flex-wrap"
+    )).toBeDefined();
+  });
+
   it("found multiple whitespaces (@stylistic/stylelint-config)", () => {
     expect(results.at(0)?.warnings.find(
       warning => warning.rule === "@stylistic/no-multiple-whitespaces"
+    )).toBeDefined();
+  });
+
+  it("found disallowed @import (extra rule of config)", () => {
+    expect(results.at(0)?.warnings.find(
+      warning => warning.rule === "at-rule-disallowed-list"
+    )).toBeDefined();
+  });
+
+  it("found positional mixin arguments (extra rule of config)", () => {
+    expect(results.at(0)?.warnings.find(
+      warning => warning.rule === "scss/at-mixin-named-arguments"
+    )).toBeDefined();
+  });
+
+  it("found nested properties (extra rule of config)", () => {
+    expect(results.at(0)?.warnings.find(
+      warning => warning.rule === "scss/declaration-nested-properties"
+    )).toBeDefined();
+  });
+
+  it("found unordered block contents (extra rule of config)", () => {
+    expect(results.at(0)?.warnings.find(
+      warning => warning.rule === "order/order"
+    )).toBeDefined();
+  });
+
+  it("found sass syntax in plain css (stylelint-config-standard)", () => {
+    expect(cssResults.at(0)?.warnings.find(
+      warning => warning.rule === "at-rule-no-unknown"
     )).toBeDefined();
   });
 });

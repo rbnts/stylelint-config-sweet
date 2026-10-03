@@ -1,0 +1,13 @@
+@import url("theme.css");
+
+.kebab-case {
+  --red: #f00;
+
+  position: absolute;
+  inset: 0;
+  background-color: var(--red);
+
+  > .child {
+    text-align: start;
+  }
+}

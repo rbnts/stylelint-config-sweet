@@ -2,7 +2,7 @@ import stylelint from "stylelint";
 import { describe, expect, it } from "vitest";
 
 const { errored } = await stylelint.lint({
-  files: "./test/muy-bien.scss"
+  files: "./test/muy-bien.{css,scss}"
 });
 
 describe("muy bien", () => {

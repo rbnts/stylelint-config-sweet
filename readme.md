@@ -30,6 +30,8 @@ Sweet, man. That's the point. On a more serious note though: It mostly enforces 
 
 ## Good to know
 
+Plain `.css` files are linted as standard CSS. The Sass rules only apply to `.scss` files and to `.astro`, `.svelte` and `.vue` files, so their `<style lang="scss">` blocks work too.
+
 If you're experiencing performance issues, or just want to boost the speed of linting, you can enable Stylelint's built-in [caching](https://stylelint.io/user-guide/options/#cache):
 
 ```js
@@ -41,6 +43,19 @@ export default {
 ```
 
 Don't forget to add `.stylelintcache` to your `.gitignore`!
+
+If your `@keyframes` live in other files (e.g. Sass partials), point Stylelint's experimental [`referenceFiles`](https://stylelint.io/user-guide/configure/#referencefiles) at them, so `no-unknown-animations` can find them:
+
+```js
+/** @type {import("stylelint").Config} */
+export default {
+  extends: "stylelint-config-sweet",
+  referenceFiles: {
+    files: "src/styles/**/*.scss",
+    customSyntax: "postcss-scss"
+  }
+};
+```
 
 ## License
 
