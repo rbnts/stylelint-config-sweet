@@ -1,4 +1,5 @@
 @use "sass:math";
+@use "#lib/media-queries" as media-queries;
 
 @function half($value) {
   @return math.div($value, 2);

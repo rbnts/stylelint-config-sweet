@@ -70,7 +70,8 @@ export default {
         ignore: "paint-properties"
       }
     ],
-    "plugin/declaration-block-no-ignored-properties": true
+    "plugin/declaration-block-no-ignored-properties": true,
+    "defensive-css/require-named-grid-lines": null
   },
   overrides: [
     {
@@ -126,7 +127,6 @@ export default {
         "scss/at-mixin-no-risky-nesting-selector": true,
         "scss/at-root-no-redundant": true,
         "scss/at-use-no-unnamespaced": true,
-        "scss/at-use-no-redundant-alias": true,
         "scss/block-no-redundant-nesting": true,
         "scss/declaration-nested-properties": "never",
         "scss/declaration-property-value-no-unknown": true,
