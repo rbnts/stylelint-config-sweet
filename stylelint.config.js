@@ -14,7 +14,6 @@ export default {
     "stylelint-config-standard",
     "stylelint-config-recess-order",
     "@stylistic/stylelint-config",
-    "stylelint-plugin-defensive-css/configs/recommended",
     "stylelint-config-html"
   ],
   rules: {
@@ -71,7 +70,20 @@ export default {
       }
     ],
     "plugin/declaration-block-no-ignored-properties": true,
-    "defensive-css/require-named-grid-lines": null
+    "selector-pseudo-class-disallowed-list": [
+      ["focus"],
+      {
+        message: "Use :focus-visible instead of :focus"
+      }
+    ],
+    "declaration-property-value-disallowed-list": [
+      {
+        "/^(min-|max-)?(height|block-size)$/": [String.raw`/\b100vh\b/`]
+      },
+      {
+        message: "Use 100svh or 100dvh instead of 100vh"
+      }
+    ]
   },
   overrides: [
     {
@@ -83,7 +95,6 @@ export default {
       ],
       rules: {
         "property-no-unknown": null,
-        "defensive-css/require-pure-selectors": null,
         "at-rule-disallowed-list": ["extend", "import"],
         "order/order": [
           [

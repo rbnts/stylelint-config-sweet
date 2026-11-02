@@ -86,9 +86,15 @@ describe("no bueno", () => {
     )).toBeDefined();
   });
 
-  it("found flex container without wrapping (stylelint-plugin-defensive-css)", () => {
+  it("found disallowed :focus pseudo-class (extra rule of config)", () => {
     expect(results.at(0)?.warnings.find(
-      warning => warning.rule === "defensive-css/require-flex-wrap"
+      warning => warning.rule === "selector-pseudo-class-disallowed-list"
+    )).toBeDefined();
+  });
+
+  it("found disallowed 100vh on height (extra rule of config)", () => {
+    expect(results.at(0)?.warnings.find(
+      warning => warning.rule === "declaration-property-value-disallowed-list"
     )).toBeDefined();
   });
 

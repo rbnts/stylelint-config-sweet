@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-sweet",
-  "version": "14.0.0",
+  "version": "15.0.0",
   "description": "Stylelint extendable config for the most sweet-ass CSS and Sass. 🤙🏼",
   "keywords": [
     "stylelint-config"
@@ -25,23 +25,22 @@
     "@stylistic/stylelint-config": "^5.0.0",
     "postcss-html": "^2.0.0",
     "stylelint-config-html": "^2.0.0",
-    "stylelint-config-recess-order": "^7.8.0",
+    "stylelint-config-recess-order": "^7.9.0",
     "stylelint-config-standard": "^40.0.0",
     "stylelint-config-standard-scss": "^17.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^3.0.0",
     "stylelint-high-performance-animation": "^2.0.0",
-    "stylelint-order": "^8.1.1",
-    "stylelint-plugin-defensive-css": "^2.9.7",
-    "stylelint-plugin-use-baseline": "^1.4.6"
+    "stylelint-order": "^8.1.2",
+    "stylelint-plugin-use-baseline": "^1.4.8"
   },
   "devDependencies": {
-    "@vitest/eslint-plugin": "1.6.27",
-    "eslint": "10.12.0",
-    "eslint-config-sweet": "34.0.0",
+    "@vitest/eslint-plugin": "1.6.28",
+    "eslint": "10.13.0",
+    "eslint-config-sweet": "35.0.0",
     "robins-tsconfig": "5.0.0",
     "stylelint": "17.16.0",
     "typescript": "6.0.3",
-    "vitest": "5.0.3"
+    "vitest": "5.0.5"
   },
   "peerDependencies": {
     "stylelint": "^17.15.0"

@@ -19,11 +19,16 @@
   }
 
   z-index: bottom;
+  height: 100vh;
   opacity: color.alpha(#fff);
 	transition: top 8s     linear;
 
   @if ($var != null) {
     colour: yellow;
 		accent-color: pink;
+  }
+
+  &:focus {
+    color: red;
   }
 }
